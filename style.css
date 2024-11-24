@@ -17,16 +17,16 @@ body{
 nav{
   display: flex;
   justify-content:center;
-  margin-left: 50px;
 }
 nav ul {
   display: flex;
   margin: 0  5px;
   padding: 0 2px;
-  position: fixed top;
+  position: fixed;
   background-color: rgb(158, 111, 187);
   justify-content: space-evenly;
-  height: auto;
+  height: 80px;
+  width: 900px;
   border-radius: 30px;
 }
 nav ul li {
@@ -36,17 +36,22 @@ nav ul li {
   align-items: center;
   list-style: none;
   border: 2px solid;
-  border-color: rgb(255, 255, 255);
+  /* border-color: rgb(255, 255, 255); */
+  border: none;
   border-radius: 50px;
   margin: 20px;
   padding: 10px;
   cursor: pointer;
 }
+.navbtn{
+  color: rgb(105, 72, 136);
+  background-color: rgb(104, 67, 159);
+  border: rgb(104, 67, 159) solid;
+  cursor: pointer;
+}
 nav ul li i {
   color: rgb(255, 255, 255);
-  font-size:
-   20px;
-
+  font-size:20px;
 }
 .intro{
   background-color: rgb(106, 59, 150);
@@ -88,13 +93,13 @@ div h3{
   display: flex;
   justify-content: start;
   padding: 5px;
-  font-size: 40px;
+  font-size: 35px;
   margin-top: 15px;
   margin-left: 8px;
 }
 .intro p{
   color: #F5F5F5;
-  font-size: 25px;
+  font-size: 30px;
   margin-top: 20px;
   margin-left: 0px;
   padding: 10px;
@@ -123,4 +128,88 @@ div h3{
 .btn:hover{
   box-shadow: 0 2px #856c9c; 
   transform: translateY(3px);
+}
+.skill{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width:900px;
+  padding: 15px;
+  margin-top: 200px;
+  margin-left: 350px;
+  margin-right: 200px;
+  margin-bottom: 100px;
+  background-color: #d1abe0;
+  border-radius: 50px;
+  box-shadow: 2px 3px 2px 3px #c879e2;
+}
+.skill0{
+  display: flex;
+  /* flex-direction: column; */
+}
+ .skill1{
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  color: white;
+  font-size: 50px;
+  width: 700px;
+  padding: 10px 50px;
+  margin-top: 20px;
+  margin-left: 100px;
+  margin-right: 100px;
+  border-radius: 100px;
+  background-color: #590b73;
+ }
+ .skill2{
+  font-size: 20px;
+  padding: 10px;
+  color: white;
+  margin-top: 30px;
+  margin-left: 28px;
+  background-color: #590b73;
+  border-radius: 40px;
+ }
+ .skill2 i{
+  font-size: 80px;
+  margin: 0 10px;
+  color: white;
+  padding:10px 10px;
+ }
+ .html{
+  margin-left: 20px;
+ }
+ .skill3{
+  font-size: 20px;
+  color: white;
+  padding: 10px 0;
+  margin-top: 30px;
+  margin-left: 28px;
+  border-radius: 40px;
+  background-color: #590b73;
+
+}
+.skill3 i{
+  font-size: 80px;
+  margin: 0 20px;
+  color: white;
+  padding:10px 10px;
+}
+.css{
+  margin-left: 40px;
+}
+.skill4{
+  font-size: 30px;
+  padding: 10px;
+  margin-top: 30px;
+  margin-left: 28px;
+  background-color: #590b73;
+  border-radius: 40px;
+  color: white;
+}
+.skill4 i{
+  font-size: 80px;
+  margin: 10px;
+  color: white;
+  padding:10px;
 }
