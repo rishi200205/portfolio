@@ -1,11 +1,11 @@
-@media (max-width: 768px) {
+@media (max-width: 414px) {
   body {
-    background-position: top; /* Adjust background for smaller screens */
+    background-position: cover; /* Adjust background for smaller screens */
     background-attachment: scroll; /* Disable fixed background for performance */
   }
 
   .head p {
-    font-size: 40px;
+    font-size: 3px;
   }
 
   nav ul li {
@@ -16,4 +16,7 @@
   nav ul li i {
     font-size: 18px;
   }
+}
+nav ul li home:hover{
+  color: aliceblue;
 }

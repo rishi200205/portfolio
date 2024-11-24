@@ -1,4 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Pacifico&family=Sevillana&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jaro:opsz@6..72&family=Lato:wght@300&family=Pacifico&family=Protest+Revolution&family=Sevillana&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Concert+One&family=Jaro:opsz@6..72&family=Lato:wght@300&family=Pacifico&family=Protest+Revolution&family=Sevillana&display=swap');
 
 * {
   padding: 0;
@@ -13,11 +15,13 @@ body{
   background-repeat: no-repeat;
 }
 .head p {
-  color: rgb(145, 112, 85);
-  font-family: Pacifico, sans-serif;
-  font-size: 60px;
+  color:#333333;
+  font-family: Concert One, sans-serif;
+  font-size: 100px;
   margin-top: 10px;
   padding: 2px 10px;
+  text-decoration: solid underline #333333;
+  text-shadow:1px 2px 2px white ;
 }
 .head{
   display: flex;
@@ -28,7 +32,7 @@ body{
 nav{
   display: flex;
   align-content: center;
-  height: 100vh;
+  /* height: 100%; */
 }
 nav ul {
   display: flex;
@@ -36,19 +40,72 @@ nav ul {
   margin: 10px;
   padding: 5px;
   position: fixed;
+  /* border: 2px solid black; */
 }
 nav ul li {
-  background-color: rgb(145, 112, 85);
+  background-color: rgb(164, 161, 161);
   display: flex;
   justify-content: center;
   align-items: center;
   list-style: none;
-  border-radius: 10px;
+  border: 2px solid;
+  border-color: rgb(0, 0, 0);
+  border-radius: 500px;
   margin: 20px 0;
   padding: 15px;
   cursor: pointer;
 }
 nav ul li i {
-  color: white;
-  font-size: 20px;
+  color: rgb(0, 0, 0);
+  font-size:
+   20px;
+
+}
+.intro{
+  /* border: 2px solid black; */
+  background-image: url('intro.jpg');
+  display: flex;
+  padding: 20px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(255, 255, 254);
+  border-radius: 50px;
+  height: auto;
+  width: auto;
+  margin-top: 30px;
+  margin-left: 150px;
+  margin-right: 100px;
+  font-family: concert one ,sans-serif;
+}
+div h1{
+  color: rgb(255, 243, 228);
+  display: flex;
+  justify-content: start;
+  padding-top: 5px;
+  padding-bottom: 0px;
+  margin: 10px;
+  font-size: 40px;
+}
+div h2{
+  color: rgb(255, 243, 228);
+  display: flex;
+  justify-content: start;
+  padding-top: 5px;
+  margin: 0 10px;
+  font-size: 40px;
+}
+div h3{
+  color: rgb(246, 233, 217);
+  display: flex;
+  justify-content: start;
+  padding: 5px;
+  margin-left: 40px;
+  font-size: 30px;
+}
+.intro p{
+  color: rgb(196, 196, 193);
+  font-size: 25px;
+  margin-top: 20px;
+  padding: 10px;
 }

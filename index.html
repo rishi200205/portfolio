@@ -7,7 +7,9 @@
   <title>Document</title>
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="css/responsive.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+    integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
 <body>
@@ -15,23 +17,26 @@
     <div class="head">
       <p>PORTFOLIO</p>
     </div>
-    <nav>
-    <ul>
+    <nav class="title">
       <ul>
-        <li onclick="location.href='https://example.com';" style="cursor: pointer;"> <i class="fa-solid fa-house"></i></li>
-        <li onclick="location.href='https://example.com/about';" style="cursor: pointer;"><i class="fa-solid fa-address-card"></i></li>
-        <li onclick="location.href='https://example.com/project';" style="cursor: pointer;"><i class="fa-solid fa-file"></i></li>
-        <li onclick="location.href='https://example.com/skills';" style="cursor: pointer;"><i class="fa-solid fa-brain"></i></li>
-        <li onclick="location.href='https://example.com/contact';" style="cursor: pointer;"><i class="fa-solid fa-phone"></i></li>
+        <li id="home" onclick="location.href='https://example.com';" style="cursor: pointer;" aria-label="Home"> <i
+            class="fa-solid fa-house"></i></li>
+        <li class="contact" onclick="location.href='https://example.com/about';" style="cursor: pointer;"
+          aria-label="About"><i class="fa-solid fa-address-card"></i></li>
+        <li class="projects " onclick="location.href='https://example.com/project';" style="cursor: pointer;"
+          aria-label="Projects"><i class="fa-solid fa-file"></i></li>
+        <li class="skills" onclick="location.href='https://example.com/skills';" style="cursor: pointer;"
+          aria-label="Skills"><i class="fa-solid fa-brain"></i></li>
+        <li class="contact" onclick="location.href='https://example.com/contact';" style="cursor: pointer;"
+          aria-label="Contact"><i class="fa-solid fa-phone"></i></li>
       </ul>
-      
-        <!-- <li href="Home.html"><i class="fa-solid fa-house"></i></li>
-        <li><a href="About.html"><i class="fa-solid fa-address-card"></i></a></li>
-        <li> <a href="Projects.html"><i class="fa-solid fa-file"></i></a></li>
-        <li> <a href="Skills.html"><i class="fa-solid fa-brain"></i></a></li>
-        <li><a href="Contact.html"><i class="fa-solid fa-phone"></i></a></li> -->
-    </ul>
     </nav>
+    <div class="intro">
+      <h1>Hi there<i class="fa-solid fa-hand-peace"></i></h1>
+      <h2>I am Rshi Raj Jaiswal</h2>
+      <h3> Front Developer</h3>
+      <p>I am a Computer Science student at the Ajay Kumar Garg Engineering College. I am a Frontend Developer with currently no experience. I am currently learning Frontend using html and css, my current goals are to become an excellent full stack Developer.</p>
+    </div>
   </header>
 </body>
 
