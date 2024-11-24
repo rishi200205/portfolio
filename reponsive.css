@@ -1,0 +1,19 @@
+@media (max-width: 768px) {
+  body {
+    background-position: top; /* Adjust background for smaller screens */
+    background-attachment: scroll; /* Disable fixed background for performance */
+  }
+
+  .head p {
+    font-size: 40px;
+  }
+
+  nav ul li {
+    padding: 10px;
+    margin: 15px 0;
+  }
+
+  nav ul li i {
+    font-size: 18px;
+  }
+}
