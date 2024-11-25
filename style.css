@@ -1,9 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
 html {
   scroll-behavior: smooth;
 }
-@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Pacifico&family=Sevillana&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Jaro:opsz@6..72&family=Lato:wght@300&family=Pacifico&family=Protest+Revolution&family=Sevillana&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Concert+One&family=Jaro:opsz@6..72&family=Lato:wght@300&family=Pacifico&family=Protest+Revolution&family=Sevillana&display=swap');
 
 * {
   padding: 0;
@@ -11,7 +10,7 @@ html {
   box-sizing: border-box;
 }
 body{
-  margin-top: 80px; /* Push content below the fixed nav */
+  margin-top: 80px;
   background-image: url('bg.jpg');
   background-size: cover;
   background-position: center;
@@ -19,65 +18,45 @@ body{
   background-repeat: no-repeat;
 }
 nav{
-  /* display: flex;
-  justify-content:center; */
   display: flex;
   justify-content: center;
-  position: fixed; /* Keeps the nav at the top while scrolling */
-  top: 0; /* Fixes it to the top of the viewport */
+  position: fixed; 
+  top: 0; 
   left: 0;
   right: 0;
-  z-index: 1000; /* Ensures the nav stays on top of other elements */
-  /* background-color: rgb(158, 111, 187); Optional: Keeps the background color */
+  z-index: 1000;
 }
 nav ul {
-  /* display: flex;
-  margin: 0  5px;
-  padding: 0 2px;
-  position: fixed;
-  background-color: rgb(158, 111, 187);
-  justify-content: space-evenly;
-  height: 80px;
-  width: 900px;
-  border-radius: 30px;
-  background-image: url(navbar.jpg); */
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
   display: flex;
-  margin: 0 auto;
-  padding: 0 2px;
-  background-color: rgb(158, 111, 187);
+  /* margin: 0 auto; */
+  /* padding: 0 2px; */
   justify-content: space-evenly;
-  height: 80px; /* Nav height */
-  width: 900px;
-  border-radius: 30px;
+  list-style-type: none;
+  height: 70px; 
+  width: 100%;
+  /* border-radius: 30px; */
   background-image: url(navbar.jpg);
 }
 nav ul li {
-  background-color: rgb(104, 67, 159);
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-  list-style: none;
-  border: 2px solid;
-  /* border-color: rgb(255, 255, 255); */
-  border: none;
-  border-radius: 50px;
-  margin: 20px;
-  padding: 10px;
+  /* padding: 10px; */
   cursor: pointer;
+  font-family: 'Bebas Neue',sans-serif;
+  font-size: 20px;
 }
-.navbtn{
-  color: rgb(105, 72, 136);
-  background-color: rgb(104, 67, 159);
-  border: rgb(104, 67, 159) solid;
-  cursor: pointer;
+nav ul li a{
+  text-decoration: none;
+  color: #590b73;
 }
-nav ul li i {
-  color: rgb(255, 255, 255);
-  font-size:20px;
+nav a:hover {
+  /* background-color: rgba(185, 161, 161, 0.1); */
+  transform: scale(1.1);
 }
 .intro{
   background-color: rgb(106, 59, 150);
-  /* box-shadow: 1px 1px 1px 3px rgb(195, 141, 246); */
   display: flex;
   padding: 40px;
   flex-direction: column;
@@ -87,7 +66,8 @@ nav ul li i {
   margin-top: 150px;
   margin-left: 50px;
   margin-right: 50px;
-  font-family: concert one ,sans-serif;
+  font-family: 'Concert One', sans-serif;
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
 }
 div h1{
   color: #F5F5F5;
@@ -161,11 +141,9 @@ div h3{
   margin: 250px 50px 300px 550px;
   background-color: #d1abe0;
   border-radius: 50px;
-  /* box-shadow: 2px 3px 2px 3px #c879e2; */
 }
 .skill1{
   display: flex;
-  /* flex-direction: column; */
 }
  .skill0{
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
@@ -179,7 +157,6 @@ div h3{
   margin-left: 100px;
   margin-right: 100px;
   border-radius: 100px;
-  /* background-color: #4f3167; */
  }
  .skill2{
   font-size: 30px;
@@ -235,40 +212,45 @@ div h3{
   color: white;
   padding:10px;
 }
+.projectbox{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100vw;
+}
 .projects{
-  width: 300px; /* Diameter of the circular container */
-  height: 300px; /* Diameter of the circular container */
-  margin: 0 auto 80px; /* Center the container horizontally */
-  text-align: center; /* Center-align text inside */
-  border: 1px solid #ddd; /* Optional: Border around the container */
-  border-radius: 50%; /* Makes the container circular */
-  overflow: hidden; /* Ensures content stays within the circle */
-  position: relative; /* Allows for layering of elements */
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional: Add a shadow */
-  background: #fff; /* Background color for the container */
+  width: 300px; 
+  height: 300px; 
+  margin: 0 auto 80px; 
+  text-align: center; 
+  border: 1px solid #ddd; 
+  border-radius: 50%; 
+  overflow: hidden; 
+  position: relative; 
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+  background: #fff; 
   box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
-
 }
 .projects:hover {
-  transform: translateY(-10px); /* Lifts the container up */
-  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2); /* Adds a stronger shadow */
+  transform: translateY(-10px); 
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
 }
 .img{
-  width: 100%; /* Make the image fill the container width */
-  height: auto; /* Maintain aspect ratio of the image */
-  display: block; /* Remove any extra space below the image */
+  width: 100%; 
+  height: auto;
+  display: block; 
 }
 .text{
-  position: absolute; /* Allows precise placement */
-  bottom: 10px; /* Positions the text at the bottom */
-  left: 50%; /* Center-align the text horizontally */
-  transform: translateX(-50%); /* Adjust for text centering */
-  background: rgba(255, 255, 255, 0.8); /* Optional: Add a background to text */
-  padding: 5px 10px; /* Add padding around the text */
-  font-size: 14px; /* Set font size */
-  color: #333; /* Text color */
-  border-radius: 5px; /* Round the text background */
+  position: absolute;
+  bottom: 10px;
+  left: 50%; 
+  transform: translateX(-50%); 
+  background: rgba(255, 255, 255, 0.8); 
+  padding: 5px 10px;
+  font-size: 14px; 
+  color: #333; 
+  border-radius: 5px; 
 }
 .middle{
   display: flex;
